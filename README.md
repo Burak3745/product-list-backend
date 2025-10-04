@@ -7,23 +7,25 @@ It provides product data via a RESTful API, dynamically calculates product price
 🚀 Features
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Mock Products API: Products are served from a static JSON file.
+1. Mock Products API: Products are served from a static JSON file.
 
-Dynamic Price Calculation: Price = (popularityScore + 1) * weight * goldPrice
+2. Dynamic Price Calculation: 
 
-  * weight = product weight (grams)
+ * Price = (popularityScore + 1) * weight * goldPrice
 
-  * popularityScore = product popularity (0–1)
+   * weight = product weight (grams)
 
-  * goldPrice = real-time gold price per gram (fetched from GoldAPI.io)
+   * popularityScore = product popularity (0–1)
 
-Gold Price Caching: Gold price is cached for 10 minutes to reduce API calls.
+   * goldPrice = real-time gold price per gram (fetched from GoldAPI.io)
 
-Filtering Support:
+3. Gold Price Caching: Gold price is cached for 10 minutes to reduce API calls.
 
-Price range (minPrice, maxPrice)
+4. Filtering Support:
 
-Popularity range (minPopularity, maxPopularity)
+   * Price range (minPrice, maxPrice)
+
+   * Popularity range (minPopularity, maxPopularity)
 
 🛠️ Tech Stack
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
